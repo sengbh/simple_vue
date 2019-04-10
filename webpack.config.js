@@ -102,6 +102,9 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.LoaderOptionsPlugin({
+      camelcase: true,
+      emitError: false,
+      failOnHint: false,
       minimize: true
     })
   ])
